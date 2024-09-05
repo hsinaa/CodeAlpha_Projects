@@ -1,6 +1,5 @@
 ### Using Flake8 to Improve Python Code Quality  
 Follow these steps to install Flake8 and generate a detailed analysis of any code quality issues in your Python projects.  
-**PS:** You can download the zip file to see the walkthrough of the following steps:
 
 #### Step 1: Install Flake8  
 First, ensure you have Flake8 installed. You can install it using pip: " pip install flake8 "
