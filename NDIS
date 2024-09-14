@@ -1,0 +1,13 @@
+Here’s a quick walkthrough of the steps I followed to resolve the issue:
+
+1. Create the Rule File: Created the missing `local.rules` file in the `/var/lib/suricata/rules/` directory to store custom rules.
+
+2. Add Some Rules: Edited the `local.rules` file to add a simple test rule, such as detecting ICMP (ping) requests.
+
+3. Verify Configuration: Opened the `suricata.yaml` configuration file to ensure it pointed to the correct path for the `local.rules` file, verifying the `rule-files` section.
+
+4. Restart Suricata: Restarted Suricata using the command `sudo suricata -c /etc/suricata/suricata.yaml -i eth0` to apply the changes and start monitoring the network.
+
+5. Check Logs: Monitored the `fast.log` file to see if Suricata detected any activity based on the newly added rules.
+
+By following these steps, Suricata was set up to actively monitor network traffic and log alerts according to the custom rules.
